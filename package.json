@@ -1,5 +1,5 @@
 {
-  "name": "untitled1",
+  "name": "nemis",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "papaparse": "^5.3.1",
     "puppeteer": "^10.2.0",
-    "xlsx": "^0.17.1"
+    "xlsx": "^0.17.2"
   }
 }
