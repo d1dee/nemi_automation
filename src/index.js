@@ -48,7 +48,7 @@ const XLSX = require('xlsx');
         await page.waitForSelector('#ctl00_ContentPlaceHolder1_SelectRecs')
         await page.select('#ctl00_ContentPlaceHolder1_SelectRecs', '1000')
 
-        await navigationPromise
+        //await navigationPromise
 
         //await page.focus('#ctl00_ContentPlaceHolder1_grdLearners')
 
@@ -94,6 +94,8 @@ const XLSX = require('xlsx');
     for (let i = 4; ;i++ ) {
         let html
         try {
+            await navigationPromise
+            
             html = await page.$eval('div > #ctl00_ContentPlaceHolder1_grdLearners > tbody > .GridRow:nth-child(' +
                 i + ') > td:nth-child(2)', e => e.innerHTML)
             if (html === undefined) {
